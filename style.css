@@ -1,0 +1,84 @@
+/* Page layout */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+/* Counter number */
+h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Button container */
+.btn-container {
+  display: flex;
+  gap: 15px;
+}
+
+/* Base button style */
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Increase button */
+#increaseBtn {
+  background: #28a745;
+  color: white;
+}
+
+/* Decrease button */
+#decreaseBtn {
+  background: #dc3545;
+  color: white;
+}
+
+/* Reset button */
+#resetBtn {
+  background: #6c757d;
+  color: white;
+}
+
+/* Hover effects */
+#increaseBtn:hover {
+  background-color: orange;
+  transform: scale(1.08);
+}
+
+#decreaseBtn:hover {
+  background-color: purple;
+  transform: scale(1.08);
+}
+
+#resetBtn:hover {
+  background-color: #5a6268;
+  transform: scale(1.08);
+}
+
+/* Click effect */
+button:active {
+  transform: scale(0.92);
+}
+
+/* Number animation */
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+/* Animation trigger class */
+.animate {
+  animation: pop 0.3s ease;
+}
